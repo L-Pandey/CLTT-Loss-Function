@@ -11,7 +11,7 @@ out_2 = [x2,x3,x4,x5] second frame from all the temporal windows
 out_3 = [x3,x4,x5,x6] third frame from all the temporal windows
 '''
 
-def temporal_nt_xent_loss_debug(out_1, out_2, out_3, temperature=0.1, eps=1e-6):
+def temporal_cltt(out_1, out_2, out_3, temperature=0.1, eps=1e-6):
     N, d = out_1.shape
 
     # Normalize embeddings
